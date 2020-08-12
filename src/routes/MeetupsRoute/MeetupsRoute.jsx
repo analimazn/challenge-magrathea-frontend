@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { getMeetups } from '../../services/Meetup'
 
-import MeetupsList from '../../containers/MeetupsList';
+import { getMeetups } from '../../services/Meetups'
+
+import MeetupsList from '../../containers/MeetupsList'
 
 const MeetupsRoute = () => {
   const [meetups, setMeetups] = useState([])
@@ -12,10 +13,7 @@ const MeetupsRoute = () => {
   }, [])
 
   return (
-    <div className="container">
-      <h1>Meetup</h1>
-      <MeetupsList meetups={ meetups }/>
-    </div>
+    <MeetupsList meetups={ meetups }/>
   )
 }
 

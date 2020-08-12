@@ -1,3 +1,3 @@
-import MeetupsRoute from './MeetupsRoute';
+import MeetupsRoute from './MeetupsRoute'
 
-export default MeetupsRoute;
+export default MeetupsRoute
