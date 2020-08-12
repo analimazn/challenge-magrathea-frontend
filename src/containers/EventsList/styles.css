@@ -1,0 +1,11 @@
+.container__events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.advice__event {
+  margin: 10px 0;
+  color: #556666
+}
