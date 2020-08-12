@@ -1,18 +1,23 @@
 import axios from 'axios'
 
-export const api = axios.create({
+const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL
 })
 
-export const baseURL = {
-  URL: process.env.REACT_APP_API_URL
+const routes = {
+  BASE: {
+    URL: process.env.REACT_APP_API_URL
+  },
+  MEETUPS: {
+    URL: '/meetups'
+  },
+  EVENTS: {
+    PAST_URL: '/events/past',
+    CURRENT_URL: '/events/current'
+  }
 }
 
-export const meetupsRoutes = {
-  MEETUPS: '/meetups'
-}
-
-export const eventsRoutes = {
-  PAST_EVENTS: '/events/past',
-  CURRENT_EVENTS: '/events/current'
+export {
+  api,
+  routes
 }

@@ -1,15 +1,20 @@
-import React from 'react';
+import React from 'react'
 import './styles/global.css'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 
-import Routes from './routes';
+import Header from './components/Header'
+import Routes from './routes'
 
 function App() {
   return (
     <Router>
-      <Routes />
+      <Container>
+        <Header/>
+        <Routes/>
+      </Container>
     </Router>
   );
 }
 
-export default App;
+export default App
