@@ -32,7 +32,8 @@ yarn install
 ```
 
 Crie o arquivo `.env` e preencha de acordo com o arquivo `.env.example`.
-###### É importante que a `URL` da `API` contenha a `/` ao final. Por exemplo:
+###### É importante que a `URL` da `API` contenha a `/` ao final.
+###### Ex:
 
 ```
 REACT_APP_API_URL=http://localhost:3001/
@@ -154,5 +155,5 @@ O diretório de `utils` contém funções genéricas que podem auxiliar em peque
 - [react](https://ghub.io/react): Biblioteca Javascript para construir interfaces.
 - [bootstrap](https://getbootstrap.com/): Framework CSS para criar componentes estilizados.
 - [react-bootstrap](https://react-bootstrap.github.io/): Adaptação do Bootstrap para o React.
-- [react-icons](https://react-icons.github.io/react-icons/): Coleção de famosos ícones componentizados para o React.
-- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Possibilita sincronização entre UI e URL.
+- [react-icons](https://react-icons.github.io/react-icons/): Biblioteca com uma coleção de famosos ícones componentizados para o React.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Biblioteca que possibilita sincronização entre UI e URL.
