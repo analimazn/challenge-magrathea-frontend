@@ -8,7 +8,7 @@ npm: 6.14.5
 yarn: 1.22.4
 ```
 
-Front-end para demonstrar Meetups localizados na região de Joinville
+Site fictício para demonstrar Meetups localizados na região de Joinville.
 
 1. [Instalação](#installation)
 2. [Inicializando a aplicação](#run-app)
