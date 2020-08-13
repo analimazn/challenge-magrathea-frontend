@@ -32,8 +32,10 @@ yarn install
 ```
 
 Crie o arquivo `.env` e preencha de acordo com o arquivo `.env.example`.
-###### É importante que a `URL` da `API` contenha a `/` ao final.
-###### Ex:
+
+**É importante que a `URL` da `API` contenha a `/` ao final.**
+
+**Ex:**
 
 ```
 REACT_APP_API_URL=http://localhost:3001/
@@ -46,7 +48,7 @@ No arquivo `.env` é possível utilizar a API que está disponível no endereço
 
 ### Inicializando a aplicação
 
-Após instalar e preencher o arquivo `.env`, digite o comando abaixo para iniciar a aplicação localmente:
+Após instalar e preencher o arquivo `.env`, execute o comando abaixo para iniciar a aplicação localmente:
 
 ```sh
 yarn start
@@ -68,6 +70,7 @@ Por padrão o projeto irá inicializar no endereço [http://localhost:3000/](htt
 ├── public
 │   ├── favicon.ico
 │   └── index.html
+├── README.md
 └── src
     ├── App.js
     ├── components
@@ -151,8 +154,8 @@ O diretório de `utils` contém funções genéricas que podem auxiliar em peque
 ## Dependências
 
 - [axios](https://ghub.io/axios): Biblioteca responsável por realizar requisições HTTP.
-- [moment](https://ghub.io/moment): Biblioteca responsável por validar e manipular datas.
-- [react](https://ghub.io/react): Biblioteca Javascript para construir interfaces.
+- [moment](https://momentjs.com/): Biblioteca responsável por validar e manipular datas.
+- [react](https://reactjs.org/): Biblioteca Javascript para construir interfaces.
 - [bootstrap](https://getbootstrap.com/): Framework CSS para criar componentes estilizados.
 - [react-bootstrap](https://react-bootstrap.github.io/): Adaptação do Bootstrap para o React.
 - [react-icons](https://react-icons.github.io/react-icons/): Biblioteca com uma coleção de famosos ícones componentizados para o React.
