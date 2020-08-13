@@ -16,10 +16,12 @@ const EventsRoute = () => {
 
   useEffect(() => {
     getPastEventsByMeetup(meetupId)
-      .then(res => setPastEvents(res.data.data))
+      .then(res => res.data.data)
+      .then(data => setPastEvents(data))
     
     getCurrentEventsByMeetup(meetupId)
-      .then(res => setCurrentEvents(res.data.data))
+      .then(res => res.data.data)
+      .then(data => setCurrentEvents(data))
   }, [meetupId])
 
   return (
