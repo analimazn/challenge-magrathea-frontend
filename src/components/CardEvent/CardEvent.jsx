@@ -23,10 +23,10 @@ function CardEvent({ infoEvent }) {
           {infoEvent.address.street}, {infoEvent.address.number}
         </Card.Subtitle>
           <Card.Text>
-            <h6>Início:</h6> {parseEventDate(infoEvent.datetime_init)}
+            <b>Início:</b> {parseEventDate(infoEvent.datetime_init)}
           </Card.Text>
           <Card.Text>
-            <h6>Fim:</h6> {parseEventDate(infoEvent.datetime_end)}
+            <b>Fim:</b> {parseEventDate(infoEvent.datetime_end)}
           </Card.Text>
         <ListGroup variant="flush">
         </ListGroup>
