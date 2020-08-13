@@ -38,7 +38,7 @@ Crie o arquivo `.env` e preencha de acordo com o arquivo `.env.example`.
 **Ex:**
 
 ```
-REACT_APP_API_URL=http://localhost:3001/
+REACT_APP_API_URL=http://localhost:3000/
 ```
 
 
