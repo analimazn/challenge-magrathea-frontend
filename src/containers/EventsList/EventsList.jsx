@@ -38,22 +38,25 @@ const EventsList = ({ pastEvents, currentEvents }) => {
       </Navbar>
       <div className="container__events">
         {
-          (current && currentEvents.length) || (past && pastEvents.length)
+          (currentEvents.length) || (pastEvents.length)
             ? (current
-                ? (currentEvents.length > 0
-                  ? currentEvents.map(current => <CardEvent key={current.id} infoEvent={current} />)
-                    : <div className="advice__event">
-                        <h4>
-                          Não há eventos agendados <FcCalendar/>
-                        </h4>
-                      </div>)
-                : (pastEvents.length > 0
-                  ? pastEvents.map(past => <CardEvent key={past.id} infoEvent={past} />)
-                  : <div className="advice__event">
-                      <h4>
-                        Não há eventos agendados <FcCalendar />
+                ? (!currentEvents.length
+                    ? <h4 className="advice__event">
+                        Não há eventos agendados <FcCalendar/>
                       </h4>
-                    </div>))
+                    : currentEvents.map(current => {
+                        return <CardEvent key={current.id} infoEvent={current} />
+                      })
+                  )
+                : (!pastEvents.length
+                    ? <h4 className="advice__event">
+                        Não há eventos realizados <FcCalendar/>
+                      </h4>
+                    : pastEvents.map(past => {
+                        return <CardEvent key={past.id} infoEvent={past} />
+                      })
+                  )
+              )
             : <Spinner/>
         }
       </div>
