@@ -20,7 +20,7 @@ function CardMeetup({ infoMeetup }) {
     >
       <img
         className="logo__meetup"
-        src={`${ROUTES.BASE.URL}/${infoMeetup.url_logo}`}
+        src={`${ROUTES.BASE.URL}${infoMeetup.url_logo}`}
         alt="Logo"
       />
       <Card.Body>
