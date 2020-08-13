@@ -12,17 +12,14 @@ import { FcCalendar } from 'react-icons/fc'
 import CardEvent from '../../components/CardEvent'
 
 const EventsList = ({ pastEvents, currentEvents }) => {
-  const [past, setPast] = useState(false)
   const [current, setCurrent] = useState(true)
 
   const togglePast = () => {
-    setPast(true)
     setCurrent(false)
   }
 
   const toggleCurrent = () => {
     setCurrent(true)
-    setPast(false)
   }
 
   return (
