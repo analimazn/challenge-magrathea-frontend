@@ -6,7 +6,7 @@ const api = axios.create({
 
 const routes = {
   BASE: {
-    URL: `${process.env.REACT_APP_API_URL}`
+    URL: process.env.REACT_APP_API_URL
   },
   MEETUPS: {
     URL: '/meetups'
