@@ -61,7 +61,7 @@ ou
 npm start
 ```
 
-Por padrão o projeto irá inicializar no endereço [http://localhost:3000/](http://localhost:3000/).
+Por padrão o projeto irá inicializar no endereço [http://localhost:3000/](http://localhost:3000/) ou [http://localhost:300X/](#url-example), podendo ser o `X` um número de acordo com a quantidade de instâncias que estão executando. Ex: Poderá ser `3001` caso a `API` já esteja executando na porta `3000`.
 
 
 ## Estrutura do projeto
